@@ -7,6 +7,14 @@ public abstract class Seleccionfutbol {
 	private int edad;
 
 	
+	
+	public Seleccionfutbol(int id, String nombre, String apellidos, int edad) {
+		this.id = id;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.edad = edad;
+	}
+
 	// constructores, getter y setter
 	public int getId() {
 		return id;
@@ -49,7 +57,7 @@ public abstract class Seleccionfutbol {
 	}
 
 	// IMPORTANTE -> METODO ABSTRACTO => no se implementa en la clase abstracta pero si en la clases hijas
-	public abstract void entrenamiento();
+//	public abstract void entrenamiento();
 
 	public void partidoFutbol() {
 	     System.out.println("Asiste al Partido de Fútbol (Clase Padre)");
